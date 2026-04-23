@@ -124,7 +124,7 @@ function WatermarkPanel({
             </>
           )}
         </div>
-        <input ref={inputRef} type="file" accept="image/*" className="hidden"
+        <input ref={inputRef as React.RefObject<HTMLInputElement>} type="file" accept="image/*" className="hidden"
           onChange={e => { const f = e.target.files?.[0]; if (f) onFile(f); }} />
       </div>
 
