@@ -37,7 +37,7 @@ Retorne APENAS o prompt refinado em inglês (prompts em inglês funcionam melhor
     return data.choices[0].message.content.trim();
   } else {
     const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${token}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${token}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
